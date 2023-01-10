@@ -7,7 +7,7 @@ public class DaysInMonth {
         if(month <= 0 || month > 12){
             System.out.println("invalid date");}
         if(year <=0 || year >= 3000){
-            System.out.println("Invalid year!");
+            System.out.println("Invalid date!");
         }
 
         boolean leap = false;
@@ -29,14 +29,14 @@ public class DaysInMonth {
             else
                 leap = true;
             if(leap == true && month == 2)
-                System.out.println("29 days");else System.out.println("28 days");
+                System.out.println("29");
         }
 
 
         if(month == 1)
             System.out.println("31 days");
-        // if(month == 2)
-
+        if(month == 2)
+        System.out.println("28");
         if(month == 3)
             System.out.println("31 days");
         if(month == 4)
