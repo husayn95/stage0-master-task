@@ -7,12 +7,15 @@ public class DaysInMonth {
         if(month <= 0 || month > 12){
             System.out.println("invalid date");}
         if(year <=0 || year >= 3000){
-            System.out.println("Invalid date!");
+            System.out.println("Invalid date");
         }
 
         boolean leap = false;
         // if the year is divided by 4 and there is no remainder i,e if it is perfectly divisible.
         if (year % 4 == 0) {
+// if the year is not century
+            leap = true;
+
 
             // if the year is century
             if (year % 100 == 0) {
@@ -25,17 +28,16 @@ public class DaysInMonth {
                     leap = false;
             }
 
-            // if the year is not century
-            else
-                leap = true;
-            if(leap == true && month == 2)
-                System.out.println("29");
+
+
         }
 
 
         if(month == 1)
             System.out.println("31 days");
-        if(month == 2)
+        if(leap == true && month == 2)
+            System.out.println("29");
+        if(leap == false && month == 2)
         System.out.println("28");
         if(month == 3)
             System.out.println("31 days");

@@ -126,7 +126,7 @@ public class ArrayTasks {
      */
     public int[][] sortRaggedArray(int[][] arr) {
         // COULD NOT DO IT WITHOUT java.util... :(
-
+        int[][] arr2 = new int[arr.length][];
         return null;
     }
 
