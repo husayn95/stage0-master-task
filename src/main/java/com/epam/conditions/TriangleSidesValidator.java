@@ -18,7 +18,7 @@ public class TriangleSidesValidator {
         if(thirdSide > firstSide && thirdSide < secondSide)
             System.out.println("it's not a triangle");
 
-        if ( firstSide > 0 &&  firstSide > 0 &&  thirdSide > 0)
+        if ( firstSide > 0 &&  secondSide > 0 &&  thirdSide > 0)
         System.out.println("this is a valid triangle");
 
     }

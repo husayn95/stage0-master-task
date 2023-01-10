@@ -4,10 +4,8 @@ public class DaysInMonth {
 
     public void printDays(int year, int month) {
 
-        if(month <= 0 || month > 12){
-            System.out.println("invalid date");}
-        if(year <=0 || year >= 3000){
-            System.out.println("Invalid date");
+        if(month <= 0 || month > 12 || year <=0 || year >= 3000){
+            System.out.println("invalid date");
         }
 
         boolean leap = false;
