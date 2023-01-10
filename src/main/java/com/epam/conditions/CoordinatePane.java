@@ -6,11 +6,11 @@ public class CoordinatePane {
         if(x > 0 && y > 0)
             System.out.println("first");
         if(x > 0 && y < 0)
-            System.out.println("second");
+            System.out.println("fourth");
         if(x < 0 && y < 0)
             System.out.println("third");
         if(x < 0 && y > 0)
-            System.out.println("fourth");
+            System.out.println("second");
         if(x == 0 && y == 0)
             System.out.println("zero");
     }

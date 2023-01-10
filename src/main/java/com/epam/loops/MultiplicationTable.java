@@ -7,7 +7,7 @@ public class MultiplicationTable {
         int tableRow = 10;
         while (counter <= tableRow){
             int result = numberTableToPrint * counter;
-            System.out.println(numberTableToPrint + " * " + counter + " = " + result);
+            System.out.println(counter + " x " + numberTableToPrint + " = " + result);
             counter++;
         }
     }

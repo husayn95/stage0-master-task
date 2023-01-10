@@ -40,7 +40,7 @@ public class Animal {
 
 
         return
-                "This animal is mostly "+color+". It has " + numberOfPaws + " "+ amountOfPaws() +" and " + hasFurOrNo()  + " fur";
+                "This animal is mostly "+color+". It has " + numberOfPaws + " "+ amountOfPaws() +" and " + hasFurOrNo()  + " fur.";
     }
 
     public String hasFurOrNo(){
