@@ -125,9 +125,16 @@ public class ArrayTasks {
      * arr = [[3, 1, 2,], [3,2]] -> [[2, 3], [1, 2, 3]] arr = [[5, 4], [7]]       -> [[7], [4, 5]]
      */
     public int[][] sortRaggedArray(int[][] arr) {
-        // COULD NOT DO IT WITHOUT java.util... :(
-        int[][] arr2 = new int[arr.length][];
-        return null;
-    }
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length-1; j++) {
+                    if (arr[j].length>arr[j+1].length){
+                        int[] temp=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp;
+                    }
+                }
+            }
+            return arr;
+        }
 
 }
